@@ -18,5 +18,10 @@ if __name__ == '__main__':
     print(nathan.idade)
     for filho in nathan.filhos:
         print(filho.nome)
+    nathan.sobrenome = 'teste' #criacao de atributo dinamico
+    print(nathan.sobrenome)
+    del lubawski.filhos # deletando atributo dinamicamente
+    print(nathan.__dict__)   #verificar todos atributos de instancia
+    print(lubawski.__dict__)
 
 
